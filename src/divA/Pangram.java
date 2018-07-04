@@ -16,7 +16,7 @@ public class Pangram {
 			map.add(Character.toLowerCase(ch));
 			
 		}
-		if(map.size() >= 26){
+		if(map.size() == 26){
 			System.out.println("YES");
 		}else{
 			System.out.println("NO");
