@@ -12,16 +12,16 @@ public class EvenOdds {
 	}
 
 	private static long solution(long n, long x) {
-		long evenorodd = 0;
+		long odd = 0;
 		if (n % 2 == 0)
-			evenorodd = n / 2;
+			odd = n / 2;
 		else
-			evenorodd = (n / 2) + 1;
+			odd = (n / 2) + 1;
 
-		if (x <= evenorodd) {
+		if (x <= odd) {
 			return (2 * (x - 1)) + 1;
 		} else {
-			x -= evenorodd;
+			x -= odd;
 			return 2 * x;
 		}
 	}
